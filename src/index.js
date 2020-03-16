@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
-import App from './App';
-import createStore from './store';
 
+import App from './App';
+
+import createStore from './store';
 const store = createStore();
 
 setTimeout(function () {
@@ -12,7 +13,7 @@ setTimeout(function () {
         payload: [
             {
                 id: 0,
-                title: 'Hello World'
+                title: '451 Farenheit'
             }
         ]
     });
@@ -21,7 +22,7 @@ setTimeout(function () {
 
 ReactDOM.render(
     <Provider store={store}>
-        <App/>
+        <App store={store} />
     </Provider>,
     document.getElementById('root'));
 

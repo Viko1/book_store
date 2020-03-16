@@ -1,5 +1,8 @@
 const initialState = {
-    books: [],
+    books: [{
+                id: 0,
+                title: 'Hello World'
+            }],
 };
 
 export default (state = initialState, action) => {

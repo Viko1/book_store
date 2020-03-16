@@ -1,7 +1,7 @@
-import React from 'react';
-import { connect} from "react-redux";
+import React, {Component} from 'react';
+import {connect} from "react-redux";
 
-function App() {
+function App(props) {
     const {books} = this.props.books;
     return (
         <div>
@@ -9,6 +9,17 @@ function App() {
         </div>
     );
 }
+
+// class App extends Component {
+//     render() {
+//         const { books } = this.props.books;
+//         return (
+//             <div>
+//                 <h1>{books[0].title}</h1>
+//             </div>
+//         );
+//     }
+// }
 
 const mapState = state => ({
     ...state
