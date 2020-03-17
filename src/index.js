@@ -7,18 +7,6 @@ import App from './App';
 import createStore from './store';
 const store = createStore();
 
-setTimeout(function () {
-    store.dispatch({
-        type: 'SET_BOOKS',
-        payload: [
-            {
-                id: 0,
-                title: '451 Farenheit'
-            }
-        ]
-    });
-}, 1000);
-
 
 ReactDOM.render(
     <Provider store={store}>
