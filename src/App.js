@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {connect} from "react-redux";
 import {setBooks} from './actions/books'
-
+import books from '../public/books.json'
+import axios from 'axios'
 
 // function App(props) {
 //     const {books} = this.props.books;
@@ -13,27 +14,29 @@ import {setBooks} from './actions/books'
 // }
 
 class App extends Component {
-    render() {
-        const { books } = this.props.books;
-        const {setBooks} = this.props;
-        const newBooks = [
-            {
-                id: 0,
-                title: '451 Farenheit'
-            }
+    componentWillMount() {
+        const {setBooks} = this.props
+        axios.get('/books.json').then(response => {
+            setBooks(response.data)
+        })
+    }
 
-        ];
+    render() {
+        const {books} = this.props;
         return (
-            <div>
-                <h1>{books[0].title}</h1>
-                <button onClick={setBooks.bind(this, newBooks)}>SET NEW BOOKS</button>
-            </div>
-        );
+            <ul>
+                {
+                    books.map(book => (
+                        <li><b>{book.title}</b> - {book.author}</li>
+                    ))
+                }
+            </ul>
+        )
     }
 }
 
-const mapStateToProps = state => ({
-    ...state
+const mapStateToProps = ({books}) => ({
+    books: books.items
 });
 
 const mapDispatchToProps = dispatch => ({
