@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
-import {connect} from "react-redux";
-import {setBooks} from './actions/books'
 import axios from 'axios'
-import Menu from './components/Menu'
-import BookCard from './components/BookCard'
+import Menu from './Menu'
+import BookCard from './BookCard'
 import {Container, Card} from 'semantic-ui-react'
 
 
@@ -36,13 +34,4 @@ class App extends Component {
     }
 }
 
-const mapStateToProps = ({books}) => ({
-    books: books.items,
-    isReady: books.isReady
-});
-
-const mapDispatchToProps = dispatch => ({
-    setBooks: books => dispatch(setBooks(books))
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;
