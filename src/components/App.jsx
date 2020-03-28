@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios'
 import Menu from './Menu'
 import BookCard from './BookCard'
+import Filter from './Filter'
 import {Container, Card} from 'semantic-ui-react'
 
 
@@ -19,7 +20,7 @@ class App extends Component {
 
             <Container>
                 <Menu/>
-
+                <Filter/>
                 <Card.Group itemsPerRow={4}>
                     {!isReady
                         ? 'Loading...'
