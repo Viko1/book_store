@@ -1,9 +1,9 @@
 import React from 'react';
-import {Card, Icon, Image} from 'semantic-ui-react'
+import {Card, Icon, Image, Button} from 'semantic-ui-react'
 
-const BookCard = ({title, author, price, image}) => {
+const BookCart = (book) => {
+    const {title, author, price, image, addToCart} = book;
     return (
-
         <Card>
             <Image src={image} wrapped ui={false}/>
             <Card.Content>
@@ -18,9 +18,10 @@ const BookCard = ({title, author, price, image}) => {
                     </a>
                 </Card.Content>
             </Card.Content>
+            <Button onClick={addToCart.bind(this, book)}>Add to cart</Button>
         </Card>
 
     );
 };
 
-export default BookCard;
+export default BookCart;
