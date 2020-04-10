@@ -1,0 +1,154 @@
+[
+  {
+    "id": 0,
+    "title": "The Stand",
+    "author": "Stephen King",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/41ISGxpFzmL.jpg",
+    "price": 10.99,
+    "rating": 4
+  },
+  {
+    "id": 1,
+    "title": "1984",
+    "author": "George Orwell",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/41E9Z5XaHcL.jpg",
+    "price": 9.99,
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "title": "Lord of the Flies",
+    "author": "William Golding",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/512mrQMBIOL.jpg",
+    "price": 9.49,
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/51IXWZzlgSL.jpg",
+    "price": 8.99,
+    "rating": 4
+  },
+  {
+    "id": 4,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/51WC8V8qj5L.jpg",
+    "price": 11.49,
+    "rating": 1
+  },
+  {
+    "id": 5,
+    "title": "The Old Man And The Sea",
+    "author": "Ernest Hemingway",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61wD5tlFIVL.jpg",
+    "price": 10.99,
+    "rating": 0
+  },
+  {
+    "id": 6,
+    "title": "For Whom the Bell Tolls",
+    "author": "Ernest Hemingway",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/51frUNw6i9L._SX326_BO1,204,203,200_.jpg",
+    "price": 10.99,
+    "rating": 4
+  },
+  {
+    "id": 7,
+    "title": "Martin Eden",
+    "author": "Jack London",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/41TxygEN6VL._SX346_BO1,204,203,200_.jpg",
+    "price": 9.99,
+    "rating": 0
+  },
+  {
+    "id": 8,
+    "title": "Flowers for Algernon",
+    "author": "Daniel Keyes",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/51L8epCtZ8L._SX299_BO1,204,203,200_.jpg",
+    "price": 10.99,
+    "rating": 5
+  },
+  {
+    "id": 9,
+    "title": "Flowers for Algernon",
+    "author": "Daniel Keyes",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/41APKHe7jCL._SX326_BO1,204,203,200_.jpg",
+    "price": 6.99,
+    "rating": 2
+  },
+  {
+    "id": 10,
+    "title": "The Call of the Wild",
+    "author": "Jack London",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/51Doq61ovIL._SX331_BO1,204,203,200_.jpg",
+    "price": 7.99,
+    "rating": 1
+  },
+  {
+    "id": 11,
+    "title": "One Hundred Years of Solitude",
+    "author": "Gabriel Garcia Marquez",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61YXD3ATJoL._SX335_BO1,204,203,200_.jpg",
+    "price": 8.49,
+    "rating": 2
+  },
+  {
+    "id": 12,
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/41UZeCEKOBL.jpg",
+    "price": 9.99,
+    "rating": 3
+  },
+  {
+    "id": 13,
+    "title": "A Princess of Mars",
+    "author": "Edgar Rice Burroughs",
+    "image": "https://m.media-amazon.com/images/I/91kw5MnXydL._AC_UY218_ML3_.jpg",
+    "price": 8.49,
+    "rating": 2
+  },
+  {
+    "id": 14,
+    "title": "The Count of Monte Cristo",
+    "author": "Alexandre Dumas",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/41mbZvaTzOL._SX336_BO1,204,203,200_.jpg",
+    "price": 9.99,
+    "rating": 0
+  },
+  {
+    "id": 15,
+    "title": "The Invisible Man",
+    "author": "H.G. Wells",
+    "image": "https://m.media-amazon.com/images/I/81jqSJWBLpL._AC_UY218_ML3_.jpg",
+    "price": 11.49,
+    "rating": 4
+  },
+  {
+    "id": 17,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/51Z0nLAfLmL.jpg",
+    "price": 10.99,
+    "rating": 4
+  },
+  {
+    "id": 18,
+    "title": "The Plague",
+    "author": "Albert Camus ",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/51zQCSq7GnL.jpg",
+    "price": 9.99,
+    "rating": 5
+  },
+  {
+    "id": 19,
+    "title": "Atlas Shrugged",
+    "author": "Ayn Rand",
+    "image": "https://m.media-amazon.com/images/I/91cREc1F+wL._AC_UY218_ML3_.jpg",
+    "price": 8.99,
+    "rating": 5
+  }
+]
