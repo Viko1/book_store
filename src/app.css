@@ -14,3 +14,10 @@ body {
 .ui.button {
     background: repeating-linear-gradient(180deg, #ff7575, #ffffff 50px);
 }
+
+.ui.card>.image>img, .ui.cards>.card>.image>img {
+    width: 100%;
+    height: auto;
+    max-height: 360px;
+    border-radius: inherit;
+}

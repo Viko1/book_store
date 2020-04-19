@@ -7,6 +7,7 @@ import {Container, Card} from 'semantic-ui-react'
 import ControlledCarousel from "./Carousel";
 
 
+
 class App extends Component {
     componentWillMount() {
         const {setBooks} = this.props;
