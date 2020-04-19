@@ -5,3 +5,12 @@ body {
 .menu {
     margin-bottom: 20px;
 }
+
+.ui.secondary.menu .active.item {
+    background: repeating-linear-gradient(180deg, #ff7575, #ffffff 50px);
+}
+
+
+.ui.button {
+    background: repeating-linear-gradient(180deg, #ff7575, #ffffff 50px);
+}

@@ -4,6 +4,7 @@ import BookCart from '../containers/BookCart'
 import Filter from '../containers/Filter'
 import Menu from '../containers/Menu'
 import {Container, Card} from 'semantic-ui-react'
+import ControlledCarousel from "./Carousel";
 
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
             <Container>
 
                 <Menu/>
+                <ControlledCarousel/>
                 <Filter/>
                 <Card.Group itemsPerRow={4}>
                     {!isReady
