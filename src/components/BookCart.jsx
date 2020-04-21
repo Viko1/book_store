@@ -5,7 +5,7 @@ const BookCart = (book) => {
     const {title, author, price, image, addToCart, addedCount} = book;
     return (
         <Card >
-            <Image src={image} wrapped ui={false}/>
+            <Image src={image} style={{height: '300px', weight: '100px'}}/>
             <Card.Content >
                 <Card.Header>{title}</Card.Header>
                 <Card.Meta >
