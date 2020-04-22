@@ -1,35 +1,35 @@
 import React, {Component} from 'react'
 import {Input, Menu} from 'semantic-ui-react'
 import {setSearchQuery} from "../actions/filter";
-
+import { Button } from 'reactstrap'
 const Filter = ({setFilter, filterBy, searchQuery, setSearchQuery}) => {
 
     return (
-        <Menu secondary>
-            <Menu.Item
+        <div className='filter-button'>
+            <Button
                 name='all'
                 active={filterBy === 'all'}
                 onClick={setFilter.bind(this, 'all')}
-            >All</Menu.Item>
-            <Menu.Item
+            >All</Button>
+            <Button
                 name='price_high'
                 active={filterBy === 'price_high'}
                 onClick={setFilter.bind(this, 'price_high')}
-            >Sort by high price</Menu.Item>
-            <Menu.Item
+            >Sort by high price</Button>
+            <Button
                 name='price_low'
                 active={filterBy === 'price_low'}
                 onClick={setFilter.bind(this, 'price_low')}
-            >Sort by low price</Menu.Item>
-            <Menu.Item
+            >Sort by low price</Button>
+            <Button
                 name="author"
                 active={filterBy === 'author'}
                 onClick={setFilter.bind(this, 'author')}
-            >Author</Menu.Item>
-            <Menu.Item>
-                <Input onChange={event => setSearchQuery(event.target.value)} icon='search' value={searchQuery} placeholder='Search'/>
-            </Menu.Item>
-        </Menu>
+            >Author</Button>
+
+            <Input onChange={event => setSearchQuery(event.target.value)} icon='search' value={searchQuery} placeholder='Search'/>
+
+        </div>
     )
 };
 
