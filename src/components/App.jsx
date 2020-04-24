@@ -26,7 +26,7 @@ class App extends Component {
                 <Menu/>
                 <ControlledCarousel/>
                 <Filter/>
-                <Card.Group itemsPerRow={4}>
+                <Card.Group itemsPerRow={4} doubling='True'>
                     {!isReady
                         ? 'Loading...'
                         : books.map((book, i) => <BookCart key={i} {...book}/>

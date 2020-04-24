@@ -5,7 +5,7 @@ const BookCart = (book) => {
     const {title, author, price, image, addToCart, addedCount} = book;
     return (
         <Card >
-            <Image src={image} style={{height: '300px', weight: '100px'}}/>
+            <Image src={image} style={{maxHeight: '350px'}}/>
             <Card.Content >
                 <Card.Header>{title}</Card.Header>
                 <Card.Meta >
@@ -27,3 +27,5 @@ const BookCart = (book) => {
 };
 
 export default BookCart;
+
+
