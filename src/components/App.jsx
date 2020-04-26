@@ -5,7 +5,7 @@ import Filter from '../containers/Filter'
 import Menu from '../containers/Menu'
 import {Container, Card} from 'semantic-ui-react'
 import ControlledCarousel from "./Carousel";
-import Toolbar from './Toolbar'
+import Toolbar from './Toolbar/Toolbar'
 
 
 class App extends Component {
