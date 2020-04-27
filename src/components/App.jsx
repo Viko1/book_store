@@ -6,6 +6,7 @@ import Menu from '../containers/Menu'
 import {Container, Card} from 'semantic-ui-react'
 import ControlledCarousel from "./Carousel";
 import Toolbar from './Toolbar/Toolbar'
+import SideDrawer from './SideDrawer/SideDrawer'
 
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
 
             <Container>
                 <Toolbar/>
+                <SideDrawer/>
                 <Menu/>
                 <ControlledCarousel/>
                 <Filter/>
