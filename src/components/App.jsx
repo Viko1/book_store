@@ -7,9 +7,15 @@ import {Container, Card} from 'semantic-ui-react'
 import ControlledCarousel from "./Carousel";
 import Toolbar from './Toolbar/Toolbar'
 import SideDrawer from './SideDrawer/SideDrawer'
+import Backdrop from './Backdrop/Backdrop'
 
 
 class App extends Component {
+    state = {
+        sideDrawerOpen: false
+    };
+
+
     componentWillMount() {
         const {setBooks} = this.props;
         axios.get('/books.json').then(({data}) => {
@@ -17,14 +23,35 @@ class App extends Component {
         })
     }
 
+    drawerToggleClickHandler = () => {
+        this.setState((prevState) => {
+            return {sideDrawerOpen: !prevState.sideDrawerOpen}
+        })
+    };
+
+    backdropClickHandler = () => {
+        this.setState({sideDrawerOpen: false})
+    };
+
     render() {
         const {books, isReady, setFilter} = this.props;
+
+        let sideDrawer;
+        let backdrop;
+
+        if (this.state.sideDrawerOpen) {
+            sideDrawer = <SideDrawer/>;
+            backdrop = <Backdrop click={this.backdropClickHandler}/>
+        }
+
+
         return (
 
 
             <Container>
-                <Toolbar/>
-                <SideDrawer/>
+                <Toolbar drawlerClickHandler={this.drawerToggleClickHandler}/>
+                {sideDrawer}
+                {backdrop}
                 <Menu/>
                 <ControlledCarousel/>
                 <Filter/>

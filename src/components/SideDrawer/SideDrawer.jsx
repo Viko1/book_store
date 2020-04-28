@@ -10,4 +10,4 @@ const  sideDrawer = props => (
     </nav>
 );
 
-export sideDrawer()
+export default sideDrawer;
