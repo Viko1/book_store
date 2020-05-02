@@ -36,11 +36,9 @@ class App extends Component {
     render() {
         const {books, isReady, setFilter} = this.props;
 
-        let sideDrawer;
         let backdrop;
 
         if (this.state.sideDrawerOpen) {
-            sideDrawer = <SideDrawer/>;
             backdrop = <Backdrop click={this.backdropClickHandler}/>
         }
 
@@ -50,9 +48,8 @@ class App extends Component {
 
             <Container>
                 <Toolbar drawlerClickHandler={this.drawerToggleClickHandler}/>
-                {sideDrawer}
+                <SideDrawer show={this.state.sideDrawerOpen}/>
                 {backdrop}
-                <Menu/>
                 <ControlledCarousel/>
                 <Filter/>
                 <Card.Group itemsPerRow={4} doubling='True'>

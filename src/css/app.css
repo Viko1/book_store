@@ -73,3 +73,8 @@ body {
     justify-content: center;
     padding: 15px 10px;
 }
+
+.ui.icon.input>input {
+    padding-right: 2.67142857em!important;
+    margin-bottom: 20px;
+}
