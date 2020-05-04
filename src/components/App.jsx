@@ -44,23 +44,23 @@ class App extends Component {
 
 
         return (
+            <div className='main_page'>
+                <Container className='main_page_container'>
+                    <Toolbar drawlerClickHandler={this.drawerToggleClickHandler}/>
+                    <SideDrawer show={this.state.sideDrawerOpen}/>
+                    {backdrop}
+                    <ControlledCarousel/>
+                    <Filter/>
+                    <Card.Group itemsPerRow={4} doubling='True'>
+                        {!isReady
+                            ? 'Loading...'
+                            : books.map((book, i) => <BookCart key={i} {...book}/>
+                            )
+                        }
+                    </Card.Group>
 
-
-            <Container>
-                <Toolbar drawlerClickHandler={this.drawerToggleClickHandler}/>
-                <SideDrawer show={this.state.sideDrawerOpen}/>
-                {backdrop}
-                <ControlledCarousel/>
-                <Filter/>
-                <Card.Group itemsPerRow={4} doubling='True'>
-                    {!isReady
-                        ? 'Loading...'
-                        : books.map((book, i) => <BookCart key={i} {...book}/>
-                        )
-                    }
-                </Card.Group>
-
-            </Container>
+                </Container>
+            </div>
 
         )
     }

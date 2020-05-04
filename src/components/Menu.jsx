@@ -14,11 +14,11 @@ const CartComponent = ({title, id, image, removeFromCart }) => (
 );
 
 const menuComponent = ({totalPrice, count, items}) => (
-    <div>
-            <Menu.Item name='signup'>
-                Sum: &nbsp; <b>{totalPrice}</b> zł.
+    <div className="right_toolbar_menu">
+            <Menu.Item className='total_price'>
+                Sum: &nbsp; <b>{totalPrice}</b> &nbsp; euro.
             </Menu.Item>
-            <Popup
+            <Popup className="sum_popup"
                 trigger={
                     <Menu.Item name='help'>
                         Cart (<b>{count}</b>)

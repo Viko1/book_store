@@ -2,6 +2,10 @@ body {
     margin-top: 20px;
 }
 
+.main_page {
+    background: rgb(247, 247, 247);
+}
+
 .menu {
     margin-bottom: 20px;
 }
@@ -77,4 +81,70 @@ body {
 .ui.icon.input>input {
     padding-right: 2.67142857em!important;
     margin-bottom: 20px;
+}
+
+.carousel_item {
+    padding-top: 4rem;
+}
+
+.right_toolbar_menu {
+    display: flex;
+}
+
+.total_price {
+    margin-right: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgb(0, 158, 127);
+    width: auto;
+    color: rgb(255, 255, 255);
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    height: 38px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+    text-decoration: none;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    transition: all 0.3s ease 0s;
+    border-radius: 6px;
+}
+
+.sum_popup {
+     margin-right: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgb(0, 158, 127);
+    width: auto;
+    color: rgb(255, 255, 255);
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    height: 38px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+    text-decoration: none;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    transition: all 0.3s ease 0s;
+    border-radius: 6px;
 }
