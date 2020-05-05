@@ -1,5 +1,6 @@
 import React from 'react'
 import './sideDrawer.css'
+import Menu from "../../containers/Menu";
 
 const sideDrawer = props => {
 
@@ -11,9 +12,8 @@ const sideDrawer = props => {
 
     return (
         <nav className={drawerClasses}>
-            <ul>
-                <li><a href="/">Products</a></li>
-                <li><a href="/">Users</a></li>
+            <ul className='Menu '>
+                <li><Menu/></li>
             </ul>
         </nav>)
 

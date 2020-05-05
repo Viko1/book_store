@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import axios from 'axios'
-import BookCart from '../containers/BookCart'
-import Filter from '../containers/Filter'
-import Menu from '../containers/Menu'
+import BookCart from '../../containers/BookCart'
+import Filter from '../../containers/Filter'
+import Menu from '../../containers/Menu'
 import {Container, Card} from 'semantic-ui-react'
-import ControlledCarousel from "./Carousel";
-import Toolbar from './Toolbar/Toolbar'
-import SideDrawer from './SideDrawer/SideDrawer'
-import Backdrop from './Backdrop/Backdrop'
+import ControlledCarousel from "../Carousel";
+import Toolbar from '../Toolbar/Toolbar'
+import SideDrawer from '../SideDrawer/SideDrawer'
+import Backdrop from '../Backdrop/Backdrop'
 
 
 class App extends Component {
@@ -46,10 +46,11 @@ class App extends Component {
         return (
             <div className='main_page'>
                 <Container className='main_page_container'>
+                    <a className="background_image"/>
                     <Toolbar drawlerClickHandler={this.drawerToggleClickHandler}/>
                     <SideDrawer show={this.state.sideDrawerOpen}/>
                     {backdrop}
-                    <ControlledCarousel/>
+                    {/*<ControlledCarousel/>*/}
                     <Filter/>
                     <Card.Group itemsPerRow={4} doubling='True'>
                         {!isReady

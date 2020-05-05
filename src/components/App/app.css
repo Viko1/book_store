@@ -11,23 +11,18 @@ body {
 }
 
 .ui.secondary.menu .active.item {
-    background: repeating-linear-gradient(180deg, #ff7575, #ffffff 50px);
+    background: rgb(0, 158, 127);
 }
 
 
 .ui.button {
-    background: repeating-linear-gradient(180deg, #ff7575, #ffffff 50px);
+    background: rgb(0, 158, 127);
+    color: white;
 }
 
-/*.ui.card>.image>img, .ui.cards>.card>.image>img {*/
-    /*width: 100%;*/
-    /*height: auto;*/
-    /*max-height: 360px;*/
-    /*border-radius: inherit;*/
-/*}*/
 
 .filter-button Button {
-    background: repeating-linear-gradient(180deg, #ff7575, #ffffff 50px);
+    background: rgb(0, 158, 127);
     margin: 1rem;
 }
 
@@ -121,7 +116,7 @@ body {
 }
 
 .sum_popup {
-     margin-right: 1rem;
+    margin-right: 1rem;
     cursor: pointer;
     display: inline-flex;
     -webkit-box-align: center;
@@ -130,11 +125,9 @@ body {
     justify-content: center;
     background-color: rgb(0, 158, 127);
     width: auto;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255)!important;
     font-family: Lato, sans-serif;
     font-weight: 700;
-    padding-top: 0px;
-    padding-bottom: 0px;
     box-sizing: border-box;
     height: 38px;
     padding-left: 15px;
@@ -147,4 +140,12 @@ body {
     border-image: initial;
     transition: all 0.3s ease 0s;
     border-radius: 6px;
+}
+
+.popup_cart {
+    color: rgb(255, 255, 255);
+}
+
+.background_image{
+    background-image: url('/src/css/bestbooks.jpg');
 }
