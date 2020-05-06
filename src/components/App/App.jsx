@@ -45,8 +45,11 @@ class App extends Component {
 
         return (
             <div className='main_page'>
+
+                <img  className="background" src="https://www.pixelstalk.net/wp-content/uploads/images1/Wallpaper-book-1920x1080.jpg" />
+                <h1 className="Bannerstyle__BannerHeading-tr6zp2-2 Ca-dsU">Your own books store</h1>
+
                 <Container className='main_page_container'>
-                    <a className="background_image"/>
                     <Toolbar drawlerClickHandler={this.drawerToggleClickHandler}/>
                     <SideDrawer show={this.state.sideDrawerOpen}/>
                     {backdrop}

@@ -146,6 +146,15 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.background_image{
-    background-image: url('/src/css/bestbooks.jpg');
+.background {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    background-size: cover;
+    overflow: hidden;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
