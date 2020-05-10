@@ -46,8 +46,25 @@ class App extends Component {
         return (
             <div className='main_page'>
 
-                <img  className="background" src="https://www.pixelstalk.net/wp-content/uploads/images1/Wallpaper-book-1920x1080.jpg" />
-                <h1 className="Bannerstyle__BannerHeading-tr6zp2-2 Ca-dsU">Your own books store</h1>
+                <div className="background_img" style={{backgroundImage: 'url(' + 'https://www.pixelstalk.net/wp-content/uploads/images1/Wallpaper-book-1920x1080.jpg' + ')'}}>
+                    <div className="center_background_div">
+                        <h1 className="center_background_text">Your own books store</h1>
+                        <span className="center_background_sub_text">Get your favorite books from our wide range of books.</span>
+                        <div className="center_search_box">
+                            <span className="search_box_style">Book</span>
+                            <div className="search_style">
+                                <form>
+                                    <input type="text" placeholder="Search your products from here"
+                                           className="search_input" value=""/>
+                                    <button>
+                                        Search
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
                 <Container className='main_page_container'>
                     <Toolbar drawlerClickHandler={this.drawerToggleClickHandler}/>
