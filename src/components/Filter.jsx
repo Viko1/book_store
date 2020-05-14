@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import {Input, Menu} from 'semantic-ui-react'
 import {setSearchQuery} from "../actions/filter";
-import { Button } from 'reactstrap'
+import {Button} from 'reactstrap'
+
 const Filter = ({setFilter, filterBy, searchQuery, setSearchQuery}) => {
 
     return (
@@ -26,13 +27,16 @@ const Filter = ({setFilter, filterBy, searchQuery, setSearchQuery}) => {
                 active={filterBy === 'author'}
                 onClick={setFilter.bind(this, 'author')}
             >Author</Button>
-            <span>
-                <Input onChange={event => setSearchQuery(event.target.value)} icon='search' value={searchQuery} placeholder='Search'/>
+            <span className='search_box'>
+                <Input onChange={event => setSearchQuery(event.target.value)} icon='search' value={searchQuery}
+                       placeholder='Search'/>
             </span>
 
 
         </div>
     )
 };
+
+
 
 export default Filter;

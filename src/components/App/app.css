@@ -28,6 +28,7 @@ body {
 
 .filter-button span {
     margin: 1rem;
+    display: none;
 }
 
 .filter-button {
@@ -259,4 +260,12 @@ body {
     border-color: initial;
     border-image: initial;
     border-radius: 6px 0px 0px 6px;
+}
+
+.Search Button {
+   display: none;
+}
+
+.Search span {
+    display: flex;
 }
