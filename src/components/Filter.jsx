@@ -28,7 +28,7 @@ const Filter = ({setFilter, filterBy, searchQuery, setSearchQuery}) => {
                 onClick={setFilter.bind(this, 'author')}
             >Author</Button>
             <span className='search_box'>
-                <Input onChange={event => setSearchQuery(event.target.value)} icon='search' value={searchQuery}
+                <Input className='search_input' onChange={event => setSearchQuery(event.target.value)} icon='search' value={searchQuery}
                        placeholder='Search'/>
             </span>
 

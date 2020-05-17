@@ -269,3 +269,13 @@ body {
 .Search span {
     display: flex;
 }
+
+.ui.icon.input > input {
+    padding-right: 2.67142857em !important;
+    margin-bottom: 4px;
+    color: white;
+    background-color: white;
+     background: linear-gradient(to right, #009e7f 0%, #009e7f 28%, #04cca4 91%, #009e7f 100%);
+    width: 300px;
+}
+
